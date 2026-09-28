@@ -1,0 +1,152 @@
+:root{
+  --pitch:   #14442f;
+  --line:    rgba(20,68,47,0.15);
+  --attack:  #e8a627;
+  --support: #f7f5ef;
+  --ink:     #14442f;
+  --cream:   #f7f5ef;
+  --muted:   rgba(20,68,47,0.65);
+}
+*{ box-sizing:border-box; }
+html,body{
+  margin:0; padding:0;
+  background:var(--cream);
+  color:var(--ink);
+  font-family:'Helvetica Neue',Arial,sans-serif;
+  line-height:1.65;
+}
+h1,h2,h3,h4{
+  font-family:'Iowan Old Style','Georgia','Times New Roman',serif;
+  color:var(--pitch);
+  line-height:1.25;
+}
+h1{ font-size:2.1rem; margin:0 0 0.5rem; }
+h2{ font-size:1.5rem; margin:2rem 0 0.75rem; border-bottom:2px solid var(--attack); padding-bottom:0.3rem; }
+h3{ font-size:1.2rem; margin:1.5rem 0 0.5rem; color:var(--attack); }
+p{ margin:0 0 1rem; }
+a{ color:var(--pitch); text-decoration-color:var(--attack); text-decoration-thickness:2px; }
+a:hover{ color:var(--attack); }
+
+/* nav */
+.site-nav{
+  background:var(--pitch);
+  padding:14px 24px;
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:6px 22px;
+  position:sticky;
+  top:0;
+  z-index:10;
+}
+.site-nav .brand{
+  font-family:'Iowan Old Style','Georgia','Times New Roman',serif;
+  font-style:italic;
+  font-size:1.1rem;
+  color:var(--cream);
+  text-decoration:none;
+  margin-right:auto;
+}
+.site-nav .links{ display:flex; flex-wrap:wrap; gap:4px 18px; }
+.site-nav a{
+  color:rgba(247,245,239,0.85);
+  text-decoration:none;
+  font-size:0.92rem;
+  font-weight:700;
+  letter-spacing:0.3px;
+}
+.site-nav a:hover{ color:var(--attack); }
+
+/* layout */
+.content{
+  max-width:760px;
+  margin:0 auto;
+  padding:40px 24px 80px;
+}
+.eyebrow{
+  font-size:0.78rem;
+  font-weight:700;
+  letter-spacing:1.5px;
+  text-transform:uppercase;
+  color:var(--attack);
+  margin-bottom:6px;
+}
+.lede{
+  font-family:'Iowan Old Style','Georgia','Times New Roman',serif;
+  font-style:italic;
+  color:var(--muted);
+  font-size:1.15rem;
+  margin:0 0 1.5rem;
+}
+
+/* tables */
+table{ width:100%; border-collapse:collapse; margin:1rem 0 1.5rem; font-size:0.95rem; }
+th,td{ text-align:left; padding:8px 10px; border-bottom:1px solid var(--line); vertical-align:top; }
+th{ color:var(--pitch); font-family:'Helvetica Neue',Arial,sans-serif; font-weight:700; background:rgba(232,166,39,0.08); }
+
+/* cards / index grid */
+.card-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(220px,1fr));
+  gap:16px;
+  margin:1.5rem 0;
+}
+.card{
+  background:var(--pitch);
+  color:var(--cream);
+  border-radius:8px;
+  padding:20px 22px;
+  text-decoration:none;
+  display:block;
+  box-shadow:0 6px 16px rgba(20,68,47,0.15);
+}
+.card:hover{ box-shadow:0 8px 20px rgba(20,68,47,0.25); }
+.card h3{
+  color:var(--attack);
+  margin:0 0 6px;
+  font-size:1.05rem;
+}
+.card p{
+  color:rgba(247,245,239,0.8);
+  font-size:0.9rem;
+  margin:0;
+}
+
+/* callout boxes, reused from the diagram/coaching-note styles */
+.note{
+  border-left:4px solid var(--attack);
+  background:rgba(232,166,39,0.08);
+  border-radius:4px;
+  padding:12px 16px;
+  margin:1rem 0;
+}
+.note.caution{ border-left-color:#b5533c; background:rgba(181,83,60,0.08); }
+
+/* diagram embeds */
+.diagram-wrap{
+  background:var(--pitch);
+  border-radius:8px;
+  padding:16px;
+  margin:1.2rem 0 0.4rem;
+}
+.diagram-wrap img, .diagram-wrap svg{ width:100%; height:auto; display:block; }
+.diagram-caption{
+  font-size:0.85rem;
+  color:var(--muted);
+  text-align:center;
+  margin:0 0 1.5rem;
+}
+
+/* footer */
+.site-footer{
+  border-top:1px solid var(--line);
+  padding:24px;
+  text-align:center;
+  font-size:0.85rem;
+  color:var(--muted);
+}
+
+@media (max-width:600px){
+  .content{ padding:28px 18px 60px; }
+  h1{ font-size:1.7rem; }
+}

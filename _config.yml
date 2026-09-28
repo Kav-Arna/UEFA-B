@@ -1,0 +1,8 @@
+title: "UEFA B Coaching Portfolio"
+description: "Stephen Kavanagh — Ecological Dynamics & Constraints-Led Coaching Portfolio"
+author: "Stephen Kavanagh"
+markdown: kramdown
+kramdown:
+  input: GFM
+permalink: pretty
+plugins: []

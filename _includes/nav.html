@@ -1,0 +1,8 @@
+<nav class="site-nav">
+  <a class="brand" href="{{ '/' | relative_url }}">UEFA B Portfolio</a>
+  <div class="links">
+    {% for item in site.data.nav %}
+    <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+    {% endfor %}
+  </div>
+</nav>

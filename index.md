@@ -9,7 +9,7 @@ permalink: /
 This portfolio sets out a coherent coaching system rather than a set of standalone documents — conceptual decisions made in one place (the Game Model) propagate through the detailed coaching document (Principles of Play), the spatial-perception tool used live with players (Dynamic Spaces), and the individual development framework (IDP). Everything is grounded in an Ecological Dynamics theoretical lens, coached through a Constraints-Led Approach.
 
 <div class="card-grid">
-  <a class="card" href="{{ '/coaching-philosophy/' | relative_url }}">
+  <a class="card" href="{{ '/coaching philosophy/' | relative_url }}">
     <h3>Coaching Philosophy</h3>
     <p>Why this approach, and what it's for.</p>
   </a>

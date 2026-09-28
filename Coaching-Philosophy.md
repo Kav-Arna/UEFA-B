@@ -1,3 +1,11 @@
+---
+layout: default
+title: Coaching Philosophy
+eyebrow: Document 1 of 4 — companion to Game Model and Principles of Play
+lede: Why and How I coach.
+permalink: /Coaching-Philosophy/
+---
+
 # Coaching Philosophy
 ### Foundations for Player and Team Development
 
